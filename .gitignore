@@ -1,0 +1,19 @@
+# 민감한 내부 자료 (매출/비밀번호 등) - 절대 커밋 금지
+*.xlsx
+*.xlsm
+
+# 작업용 파일 (사이트 배포에 불필요)
+index (9).html
+편집기.html
+_build_embed.py
+_site_html_embed.js
+_gen_region_js.py
+레퍼런스*.jpg
+폰트 레퍼런스*.jpg
+
+# Claude Code 로컬 설정/스킬 캐시
+.claude/
+
+# OS
+Thumbs.db
+.DS_Store

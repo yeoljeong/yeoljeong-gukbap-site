@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script>
+(function(){
+  // 카카오톡 인앱 브라우저 감지 (자동 이동은 하지 않고 표시만 함)
+  var ua = navigator.userAgent || "";
+  if (/KAKAOTALK/i.test(ua)) {
+    document.documentElement.setAttribute('data-kakao', '1');
+  }
+})();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>열정국밥 가맹문의 | 배달전문 국밥 프랜차이즈 창업</title>
+<meta name="description" content="배달전문 국밥 프랜차이즈, 실제 가맹점 정산 데이터로 확인하는 열정국밥 창업">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍲</text></svg>">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" as="style" crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="css/스타일.css?v=4">
+</head>
+<body id="top">
+
+<div class="kakao-banner">
+  카카오톡 브라우저에서는 일부 화면이 제대로 표시되지 않을 수 있습니다.<br>
+  <button onclick="location.href='kakaotalk://web/openExternal?url='+encodeURIComponent(location.href)">사파리로 열기</button><br>
+  버튼이 안 눌리면 오른쪽 위 <strong>···</strong> 메뉴 → <strong>다른 브라우저로 열기</strong>를 눌러주세요.
+</div>
+
+<header class="site-logo-bar">
+  <div class="site-logo-bar__inner wrap">
+    <a href="#top" class="site-logo-bar__brand">
+      <img src="이미지/로고.svg" alt="열정국밥" class="site-logo">
+    </a>
+    <a href="#apply" class="site-logo-bar__cta">가맹문의 남기기</a>
+  </div>
+</header>
+
+<section class="hero-video" aria-label="열정국밥 브랜드 인트로">
+  <video
+    class="hero-video__media"
+    poster="이미지/히어로_성냥_포스터.jpg"
+    autoplay muted loop playsinline
+    aria-hidden="true">
+    <source src="영상/히어로_성냥.mp4" type="video/mp4">
+  </video>
+  <div class="hero-video__overlay"></div>
+
+  <div class="hero-video__content wrap">
+    <span class="kicker">배달전문 국밥 프랜차이즈</span>
+    <h1 class="hero-video__headline">꺼지지 않을 불씨 하나,<br>열정국밥이 당겨드립니다</h1>
+    <p class="hero-video__sub">혼자 버텨온 밤이 많았다는 걸 압니다.<br>이제, 그 열정에 불을 붙일 시간입니다.</p>
+
+    <div class="badge-row">
+      <div class="badge-tag">
+        <span class="badge-tag__label">사업자등록</span>
+        <span class="badge-tag__value">881-87-02280</span>
+      </div>
+      <div class="badge-row__center">
+        <span class="badge-row__stars" aria-hidden="true">★★★★★</span>
+        <span>실제 가맹점 데이터 기반 공개</span>
+      </div>
+      <div class="badge-tag">
+        <span class="badge-tag__label">운영 매장</span>
+        <span class="badge-tag__value">전국 224개</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="corner-shard" aria-hidden="true"></div>
+
+  <a href="#지역" class="hero-video__scroll-cue">
+    <span>실제 가맹점 데이터 보기</span>
+    <span class="hero-video__scroll-arrow" aria-hidden="true">↓</span>
+  </a>
+</section>
+
+<script>
+(function(){
+  var v = document.querySelector('.hero-video__media');
+  if (!v) return;
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion) {
+    v.removeAttribute('autoplay');
+    v.pause();
+    return;
+  }
+  var playPromise = v.play();
+  if (playPromise && playPromise.catch) playPromise.catch(function(){ /* 자동재생 차단 시 포스터 이미지로 표시됨 */ });
+})();
+</script>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">배달전문 국밥 프랜차이즈</span>
+    <h1>창업을 결정하기 전에,<br>열정국밥 가맹점의<br><span class="headline-accent">실제 데이터</span>부터 보세요</h1>
+    <p class="hero-sub">가맹점이 직접 제출한 정산 데이터를 지역별 평균값으로 정리했습니다. 매장마다 조건이 다르니 참고 자료로 봐주세요.</p>
+    <a href="#지역" class="hero-cta">내 지역 데이터 확인하기</a>
+    <p class="trust-line">㈜열정코리아 공식 가맹 상담 · 사업자등록번호 881-87-02280</p>
+
+    <div class="stat-strip">
+      <div class="stat">
+        <div class="stat__label">월매출 평균</div>
+        <div class="stat__num num">5,338<span class="stat__unit">만원</span></div>
+      </div>
+      <div class="stat">
+        <div class="stat__label">월 순수익 평균</div>
+        <div class="stat__num num">871<span class="stat__unit">만원</span></div>
+      </div>
+    </div>
+    <div class="stat-sub">
+      <span class="stat-sub__label">순수익 마진율 평균</span>
+      <span class="stat-sub__num num">17.6%</span>
+    </div>
+    <p class="hero-note">2026년 5월 기준, 직영점을 제외하고 데이터를 기입한 가맹점 200곳의 평균값입니다. 매출은 배달 플랫폼(배달의민족·쿠팡이츠·요기요 등)의 실제 정산 데이터, 인건비·임대료 등 비용 항목은 가맹점이 직접 입력한 자료를 기준으로 합니다. <strong>이 수치는 전체 가맹점의 평균값이며, 입지·상권·운영 방식 등 매장별 조건에 따라 실제 결과는 달라질 수 있습니다.</strong></p>
+
+    <div class="top-store-card">
+      <span class="top-badge">전국 매출 1위</span>
+      <div class="top-store-name">인천 C점</div>
+      <div class="top-store-stats">
+        <div class="ts-stat"><span class="ts-num num">16,264<span class="unit">만원</span></span><span class="ts-label">월매출</span></div>
+        <div class="ts-stat"><span class="ts-num num">20.1<span class="unit">%</span></span><span class="ts-label">마진율</span></div>
+      </div>
+      <p class="top-store-note">전국 가맹점 중 매출이 가장 높은 매장 기준입니다. 같은 상권이라도 매장 운영 구조에 따라 인건비와 순수익은 다르게 나타날 수 있습니다.</p>
+    </div>
+  </div>
+</header>
+
+<section class="pain-section">
+  <div class="wrap">
+    <span class="eyebrow">WHY IT MATTERS</span>
+    <h2>배달창업, 어떤 브랜드를 선택해야 할지<br>막막하셨나요?</h2>
+    <p>전국 가맹점의 실제 매출과 마진율을 <span class="accent-red">증명할 수 있는 브랜드</span>는<br>과연 얼마나 있을까요?</p>
+  </div>
+</section>
+
+<section class="region-section section" id="지역">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">REAL DATA</span>
+      <h2>희망 지역의 데이터를<br>직접 확인해 보세요</h2>
+      <p>지역을 선택하면 해당 지역 가맹점의 평균값으로 바뀝니다.</p>
+    </div>
+
+    <div class="region-panel">
+      <div class="region-controls">
+        <select id="지역선택"></select>
+        <span class="sample-tag" id="표본태그">표본 28개 매장</span>
+      </div>
+
+      <div class="metric-grid">
+        <div class="metric">
+          <div class="m-label">월매출 평균</div>
+          <div class="m-num num" id="매출평균">6,295<span class="unit">만원</span></div>
+        </div>
+        <div class="metric">
+          <div class="m-label">월 순수익 평균</div>
+          <div class="m-num num" id="순수익평균">825<span class="unit">만원</span></div>
+        </div>
+      </div>
+      <div class="stat-sub">
+        <span class="stat-sub__label">순수익 마진율 평균</span>
+        <span class="stat-sub__num num" id="마진율평균">13.0<span class="unit">%</span></span>
+      </div>
+
+      <p class="variance-note">이 수치는 해당 지역 가맹점의 평균값입니다. 입지·상권·운영 방식 등 매장별 조건에 따라 실제 매출과 수익은 차이가 있을 수 있습니다.</p>
+
+      <div class="top-store-card">
+        <span class="top-badge" id="지역1위뱃지">서울 매출 1위</span>
+        <div class="top-store-name" id="지역1위매장">서울 A점</div>
+        <div class="top-store-stats three">
+          <div class="ts-stat"><span class="ts-num num" id="지역1위매출">13,174<span class="unit">만원</span></span><span class="ts-label">월매출</span></div>
+          <div class="ts-stat"><span class="ts-num num" id="지역1위순수익">1,724<span class="unit">만원</span></span><span class="ts-label">순수익 금액</span></div>
+          <div class="ts-stat"><span class="ts-num num" id="지역1위마진율">13.1<span class="unit">%</span></span><span class="ts-label">마진율</span></div>
+        </div>
+        <p class="top-store-note">이 매장은 해당 지역에서 매출이 가장 높은 매장 기준으로 뽑은 것입니다. 같은 상권이라도 매장 운영 구조에 따라 인건비와 순수익은 다르게 나타날 수 있으니 참고용으로만 봐주세요.</p>
+      </div>
+
+      <div class="cost-pair">
+        <div class="cost">
+          <div class="num" id="임대료평균">164만원</div>
+          <div class="label">월 임대료 평균</div>
+        </div>
+        <div class="cost">
+          <div class="num" id="인건비평균">681만원</div>
+          <div class="label">월 직원 인건비 평균</div>
+        </div>
+      </div>
+
+      <div class="disclosure">
+        <strong>이 수치를 읽는 법.</strong> 매출은 배달 플랫폼 실제 정산 데이터, 인건비·임대료 등 비용 항목은 가맹점이 직접 입력한 자료를 기준으로 하며, 직영점을 제외하고 데이터를 기입한 가맹점만 반영했습니다. 표본 수가 적은 지역(제주·세종·강원·대전 등)은 매장 한두 곳의 실적에 따라 평균이 크게 달라질 수 있으니 참고용으로만 봐주세요.
+      </div>
+
+      <p class="trust-callout">일부 매장에서만 성공한 데이터가 아닌, 실제 점주님들이 기입하고 제출한 신뢰된 데이터를 믿고 선택하세요.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cost-section section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">COST TRANSPARENCY</span>
+      <h2>비용 구조까지<br>숨기지 않고 공개합니다</h2>
+      <p>매출액 대비 원가율을 항목별로 그대로 보여드립니다. 121개 가맹점 취합 데이터 기준입니다.</p>
+    </div>
+
+    <div class="cost-bars">
+      <div class="cost-bar">
+        <div class="cost-bar__row">
+          <span class="cost-bar__label">마켓봄 (주요 식자재)</span>
+          <span class="cost-bar__value num">30.7%</span>
+        </div>
+        <div class="cost-bar__track"><div class="cost-bar__fill" style="width:85.5%"></div></div>
+      </div>
+      <div class="cost-bar">
+        <div class="cost-bar__row">
+          <span class="cost-bar__label">야채</span>
+          <span class="cost-bar__value num">2.1%</span>
+        </div>
+        <div class="cost-bar__track"><div class="cost-bar__fill" style="width:5.9%"></div></div>
+      </div>
+      <div class="cost-bar">
+        <div class="cost-bar__row">
+          <span class="cost-bar__label">주류·물·음료</span>
+          <span class="cost-bar__value num">0.7%</span>
+        </div>
+        <div class="cost-bar__track"><div class="cost-bar__fill" style="width:1.9%"></div></div>
+      </div>
+      <div class="cost-bar">
+        <div class="cost-bar__row">
+          <span class="cost-bar__label">부외품 카드비</span>
+          <span class="cost-bar__value num">2.4%</span>
+        </div>
+        <div class="cost-bar__track"><div class="cost-bar__fill" style="width:6.7%"></div></div>
+      </div>
+      <div class="cost-bar cost-bar--total">
+        <div class="cost-bar__row">
+          <span class="cost-bar__label">총 원가율 (합계)</span>
+          <span class="cost-bar__value num">35.9%</span>
+        </div>
+        <div class="cost-bar__track"><div class="cost-bar__fill" style="width:100%"></div></div>
+      </div>
+    </div>
+    <p class="disclosure">2026년 5월 기준, 취합 시트 데이터를 보유한 가맹점 121곳의 평균 원가율입니다. 매장별 발주량과 프로모션 여부에 따라 실제 원가율은 다를 수 있습니다.</p>
+  </div>
+</section>
+
+<section class="brand-section section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">WHY 열정국밥</span>
+      <h2>열정국밥은 이런 브랜드입니다</h2>
+      <p>224개 매장을 운영하며 쌓아온 배달전문 운영 노하우를 가맹점에 그대로 전달합니다.</p>
+    </div>
+
+    <div class="diff-callout">
+      <p><span class="accent-red">유행을 타는 아이템은 끝이 있습니다.</span> 대한민국 365일 언제나 소비되는 '진짜 장사'를 시작하세요.</p>
+      <p>더 이상 무너지지 않는 장사, 숫자와 데이터로 증명된 본사가 함께 뜁니다.</p>
+    </div>
+
+    <div class="tag-divider"><span class="eyebrow">열정국밥 기능</span></div>
+
+    <div class="feature-rows">
+      <div class="feature-row">
+        <span class="feature-row__num">01</span>
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="2.5"/><circle cx="17" cy="18" r="2.5"/><path d="M6 18h7l-1.2-6.2H8.5"/><path d="M8.5 11.8 7 7h8l2.5 4.5H19a2 2 0 0 1 2 2v1.5"/><path d="M4 11h3"/></svg>
+        </span>
+        <div class="feature-row__body">
+          <h3>배달 전문 모델</h3>
+          <p>홀 운영 없이 배달에 집중하는 구조라 넓은 매장이 필요 없고, 임대료와 인테리어 부담을 줄일 수 있습니다.</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <span class="feature-row__num">02</span>
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-1.6-1.2-4-2-7-2v14c3 0 5.4.8 7 2 1.6-1.2 4-2 7-2V4c-3 0-5.4.8-7 2Z"/><path d="M12 6v14"/></svg>
+        </span>
+        <div class="feature-row__body">
+          <h3>표준화된 레시피</h3>
+          <p>조리 경험이 없어도 정해진 레시피와 매뉴얼대로 따라 하면 동일한 맛을 낼 수 있도록 표준화했습니다.</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <span class="feature-row__num">03</span>
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8"/><path d="M12 16v4"/></svg>
+        </span>
+        <div class="feature-row__body">
+          <h3>플랫폼 운영 지원</h3>
+          <p>배달의민족, 쿠팡이츠, 요기요 등 배달 플랫폼 관리와 광고 운영을 본사에서 함께 지원합니다.</p>
+        </div>
+      </div>
+      <div class="feature-row">
+        <span class="feature-row__num">04</span>
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10"/><path d="M11 20V4"/><path d="M18 20v-7"/><path d="M3 20h18"/></svg>
+        </span>
+        <div class="feature-row__body">
+          <h3>가맹점 실데이터 공개</h3>
+          <p>전국 가맹점의 정산 데이터를 지속적으로 관리해, 창업 전 지역별 수익성을 구체적으로 확인할 수 있습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ceo-section section">
+  <div class="wrap">
+    <span class="ceo-badge">약사 출신 대표</span>
+    <div class="section-head">
+      <span class="eyebrow">OUR STORY</span>
+      <h2>약사가 만든,<br>건강을 생각한 국밥</h2>
+      <p>약학을 전공한 대표가 재료 하나하나를 따져가며 만든 국밥입니다.</p>
+    </div>
+
+    <div class="ceo-grid">
+      <div class="ceo-photo">
+        <img src="이미지/대표님 프로필.png" alt="전경훈 대표">
+      </div>
+      <div class="ceo-body">
+        <p class="ceo-quote">열정국밥을 믿고 창업한 모든 점주님들이 많은 돈을 벌 수 있게 해주고 싶다</p>
+        <p class="ceo-attrib">전경훈 대표 · 브랜드 런칭 당시</p>
+        <p class="ceo-desc">약사로 일하며 늘 사람 몸에 좋은 것을 고민하던 대표가, 그 마음을 그대로 담아 만든 브랜드가 열정국밥입니다. 맛뿐 아니라 재료와 조리 방식까지 따져가며 만든 국밥이라 자신 있게 내놓을 수 있었습니다.</p>
+        <p class="ceo-commit">창업에 대한 열정이 가득한 예비점주님, 열정국밥은 점주님의 열정이 식지 않는 이상 본사는 점주님을 포기하지 않습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial-section section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">REVIEW</span>
+      <h2>가맹점주님이 남겨주신 이야기</h2>
+      <p>2년 5개월간 매장을 운영하고 양도양수를 마친 점주님이 남겨주신 소감입니다.</p>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testimonial-mark">"</div>
+      <p class="testimonial-text">2년 5개월 동안 우리 네 식구의 든든한 밥그릇이 되어준 곳이었습니다. 처음엔 대표님이 호랑이처럼 엄하게 느껴져서 서운했던 날도 많았지만, 돌아보니 그 덕분에 더 열심히 할 수 있었습니다. 힘들 때마다 마음을 다독여주신 본부장님과 팀장님들 덕분에 여기까지 왔습니다. 여러 프랜차이즈를 겪어봤지만, 가맹점주를 위해 이렇게까지 신경 써주는 곳은 없었습니다. 건강상의 이유로 매장을 넘기게 되어 아쉽지만, 열정국밥과 함께한 시간에 진심으로 감사드립니다.</p>
+      <p class="testimonial-tagline">열정은 앞으로도 계속, 잠들지 않습니다. 열정! 열정! 열정!</p>
+      <p class="testimonial-attrib">전 가맹점주 · 2년 5개월 운영, 양도양수 완료</p>
+    </div>
+  </div>
+</section>
+
+<section class="apply-section section" id="apply">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">APPLY NOW</span>
+      <h2>가맹 상담 신청하기</h2>
+      <p class="apply-emotional-line">막막했던 시작도, 쓰라렸던 실패도. 마지막 창업은 신뢰있는 브랜드로 성공하세요!</p>
+      <p>본인인증과 간단한 자격 확인 절차를 거쳐 안전하게 접수되며, 희망 지역 담당자가 확인 후 연락드립니다.</p>
+    </div>
+
+    <div class="apply-grid">
+      <div class="apply-info">
+        <p>담당자가 남겨주신 연락처로 연락드려 희망 지역의 상권과 조건을 함께 확인합니다. 이 단계에서 정식 예상매출액 산정서와 정보공개서를 별도로 안내해 드립니다.</p>
+        <div class="mini-row">
+          <span class="mini-num num">224개</span>
+          <span class="mini-label">현재 운영 중인 전국 매장 수</span>
+        </div>
+      </div>
+
+      <div class="apply-card">
+
+        <div class="진행바">
+          <span class="진행중" data-step="1"></span>
+          <span data-step="2"></span>
+          <span data-step="3"></span>
+          <span data-step="4"></span>
+        </div>
+
+        <p class="hp-field"><label>이 필드는 비워두세요<input id="bot-field" autocomplete="off" tabindex="-1"></label></p>
+
+        <!-- 1단계: 정보 입력 -->
+        <section class="단계 보임" data-step="1">
+          <div class="단계-헤더">
+            <div class="단계-제목">가맹문의 정보 입력</div>
+            <div class="단계-설명">성함과 연락처, 창업 희망 지역을 입력해 주세요.</div>
+          </div>
+
+          <div class="field">
+            <label for="성함입력">성함</label>
+            <input type="text" id="성함입력" placeholder="홍길동" autocomplete="name">
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="연락처입력">연락처</label>
+              <input type="tel" id="연락처입력" placeholder="010-0000-0000" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="나이입력">나이</label>
+              <input type="number" id="나이입력" min="19" max="99" placeholder="45">
+            </div>
+          </div>
+          <div class="field">
+            <label for="희망지역선택">창업 희망 지역</label>
+            <select id="희망지역선택"></select>
+          </div>
+
+          <div class="동의-자세히행">
+            <label class="consent" style="margin-bottom:0;">
+              <input type="checkbox" id="개인정보동의">
+              <span>개인정보 수집·이용에 동의합니다. — 필수</span>
+            </label>
+            <button type="button" class="동의-자세히버튼" id="개인정보자세히버튼">자세히</button>
+          </div>
+          <div class="동의-상세" id="개인정보상세">
+            수집 항목: 성함, 연락처, 나이, 희망 지역, 본인인증 결과, 신용정보 조회 결과<br>
+            목적: 가맹 상담 신청 접수 및 담당자 배정<br>
+            보유 기간: 상담 완료 후 파기 (관계 법령상 별도 보관이 필요한 경우 해당 기간까지)
+          </div>
+
+          <p class="form-msg err" id="1단계오류">성함, 연락처, 나이, 희망 지역을 입력하고 개인정보 동의에 체크해 주세요.</p>
+
+          <button type="button" class="submit-btn" id="1단계다음">다음</button>
+        </section>
+
+        <!-- 2단계: 본인인증 (데모) -->
+        <section class="단계" data-step="2">
+          <div class="단계-헤더">
+            <div class="단계-제목">본인 확인</div>
+            <div class="단계-설명">허위 상담 신청을 막기 위해 휴대폰 본인인증을 진행합니다.</div>
+          </div>
+
+          <div class="field">
+            <label for="인증번호입력">인증번호</label>
+            <div class="본인인증-행">
+              <input type="text" id="인증번호입력" placeholder="인증번호 6자리" maxlength="6" inputmode="numeric" disabled>
+              <button type="button" class="버튼-보조" id="인증발송버튼" style="width:auto;white-space:nowrap;margin-top:0;">인증번호 발송</button>
+            </div>
+            <p class="field-도움말" id="인증도움말">위 버튼을 눌러 <span id="인증대상번호">입력하신 번호</span>로 인증번호를 받아주세요.</p>
+          </div>
+
+          <p class="form-msg err" id="2단계오류">인증번호를 확인해 주세요.</p>
+
+          <div class="버튼-행-가로">
+            <button type="button" class="버튼-보조" data-이전="1">이전</button>
+            <button type="button" class="submit-btn" id="2단계다음" disabled style="opacity:0.5;">본인인증 필요</button>
+          </div>
+        </section>
+
+        <!-- 3단계: 신용정보 조회 (데모) -->
+        <section class="단계" data-step="3">
+          <div class="단계-헤더">
+            <div class="단계-제목">가맹 자격 확인</div>
+            <div class="단계-설명">창업자금 조달 가능 여부 확인을 위해 신용정보 조회에 동의해 주세요.</div>
+          </div>
+
+          <div class="동의-자세히행">
+            <label class="consent" style="margin-bottom:0;">
+              <input type="checkbox" id="신용동의체크">
+              <span>신용정보 수집·이용·조회 동의 — 필수</span>
+            </label>
+            <button type="button" class="동의-자세히버튼" id="신용동의자세히버튼">자세히</button>
+          </div>
+          <div class="동의-상세" id="신용동의상세">
+            조회 항목: 신용점수, 연체 여부 등 가맹 자격 확인에 필요한 최소한의 정보<br>
+            목적: 가맹 개설을 위한 창업자금 조달 가능성 확인<br>
+            제공받는 자: 제휴 신용조회회사(실 서비스 전환 시 계약 업체명 명시)<br>
+            본 조회는 <strong>일반(간편) 조회</strong>로 진행되어 개인 신용점수에는 영향을 주지 않습니다.
+          </div>
+
+          <p class="form-msg err" id="3단계오류">신용정보 조회 동의에 체크해 주세요.</p>
+
+          <div class="버튼-행-가로">
+            <button type="button" class="버튼-보조" data-이전="2">이전</button>
+            <button type="button" class="submit-btn" id="신용조회버튼">조회 진행하기</button>
+          </div>
+        </section>
+
+        <!-- 4단계: 완료 -->
+        <section class="단계" data-step="4">
+          <div class="success-state show">
+            <div class="mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>
+            </div>
+            <h3>접수가 완료되었습니다</h3>
+            <p>남겨주신 연락처로 담당자가 순차적으로 연락드리겠습니다.</p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>㈜열정코리아 | 대표 전경훈 | 사업자등록번호 881-87-02280</p>
+    <p>서울특별시 송파구 위례성대로16길 4-8, 1층</p>
+  </div>
+</footer>
+
+<div class="mobile-cta-bar">
+  <a href="#apply">가맹문의 남기기</a>
+</div>
+
+<script src="js/유입경로.js"></script>
+<script src="js/지역데이터.js"></script>
+<script src="js/문의폼.js"></script>
+</body>
+</html>
