@@ -1008,4 +1008,15 @@ footer .wrap p { margin: 4px 0; }
   .metric-grid { grid-template-columns: 1fr; }
   .cost-pair { grid-template-columns: 1fr; }
   .top-store-stats { gap: 18px; }
+
+  /* 좁은 화면에서 <br>로 강제 줄바꿈된 제목이 다시 한번 감싸져 줄이 겹쳐 보이는 문제 방지 */
+  .hero-video__headline {
+    font-size: clamp(28px, 9vw, 40px);
+    line-height: 1.22;
+  }
+  header.hero h1 {
+    font-size: clamp(26px, 7.5vw, 34px);
+    line-height: 1.22;
+  }
+  .stat-sub__num { font-size: 24px; }
 }
