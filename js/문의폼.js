@@ -2,7 +2,7 @@
 // 완료 시 구글 시트(Apps Script 웹앱)로 실제 데이터를 전송합니다.
 (function () {
   // ▼▼▼ 구글 시트 연동: Apps Script 배포 후 발급받은 웹앱 URL로 교체하세요 ▼▼▼
-  var WEBHOOK_URL = "https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec";
+  var WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbz8LBtq3goQuJAx62GRMdL6tRebpgJbVb1fs_MOphA8DnfBr1F9UUGekypNFfG5W-Yu/exec";
   // ▲▲▲ 배포 방법은 GOOGLE_SHEETS_연동방법.md 참고 ▲▲▲
 
   var 카드 = document.querySelector(".apply-card");
